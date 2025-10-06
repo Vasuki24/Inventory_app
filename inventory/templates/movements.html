@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Product Movements</h2>
+<form method="POST" action="/add_movement">
+  <select name="product_id" required>
+    <option value="">Select Product</option>
+    {% for p in products %}
+    <option value="{{ p.product_id }}">{{ p.name }}</option>
+    {% endfor %}
+  </select>
+  <input type="number" name="qty" placeholder="Quantity" required>
+  
+  <select name="from_location">
+    <option value="">From (optional)</option>
+    {% for l in locations %}
+    <option value="{{ l.location_id }}">{{ l.name }}</option>
+    {% endfor %}
+  </select>
+  <select name="to_location">
+    <option value="">To (optional)</option>
+    {% for l in locations %}
+    <option value="{{ l.location_id }}">{{ l.name }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Move</button>
+</form>
+
+<table border="1">
+<tr><th>ID</th><th>Product</th><th>From</th><th>To</th><th>Qty</th><th>Timestamp</th></tr>
+{% for m in movements %}
+<tr>
+  <td>{{ m.movement_id }}</td>
+  <td>{{ m.product.name }}</td>
+  <td>{{ m.qty }}</td>
+  <td>{{ m.from_loc.name if m.from_loc else '---' }}</td>
+  <td>{{ m.to_loc.name if m.to_loc else '---' }}</td>
+  <td>{{ m.timestamp }}</td>
+</tr>
+
+
+{% endfor %}
+</table>
+{% endblock %}

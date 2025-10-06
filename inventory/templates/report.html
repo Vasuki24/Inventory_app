@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Inventory Balance Report</h2>
+<table border="1">
+<tr><th>Product</th><th>Location</th><th>Quantity</th></tr>
+{% for b in balances %}
+<tr>
+  <td>{{ b.product }}</td>
+  <td>{{ b.location }}</td>
+  <td>{{ b.qty }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

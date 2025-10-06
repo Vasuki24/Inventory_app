@@ -1,0 +1,137 @@
+/* ===== General Page Style ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8fafc;
+  color: #333;
+}
+
+/* ===== Header ===== */
+h1 {
+  background: #0d6efd;
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background: #e9ecef;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #0d6efd;
+}
+
+nav a {
+  color: #0d6efd;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  background: #0d6efd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* ===== Content Area ===== */
+.container {
+  max-width: 900px;
+  margin: 25px auto;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Forms ===== */
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 150px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 3px rgba(13,110,253,0.3);
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #0d6efd;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f6ff;
+}
+
+tr:hover {
+  background-color: #d9e7ff;
+}
+
+/* ===== Headings ===== */
+h2 {
+  color: #0d6efd;
+  border-left: 4px solid #0d6efd;
+  padding-left: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
