@@ -94,11 +94,13 @@ Displayed in a grid with columns:
 
 
 
- 4. Movements Page<img width="921" height="842" alt="image" src="https://github.com/user-attachments/assets/42f635da-2859-44df-8525-2272985c713a" />
+ 4. Movements Page<img width="953" height="632" alt="image" src="https://github.com/user-attachments/assets/c19f1eac-cc51-4c14-bb90-d2f5adb856fe" />
 
 
 
- 5. Report Page ![Uploading image.png…]()
+
+ 5. Report Page
+    <img width="921" height="842" alt="image" src="https://github.com/user-attachments/assets/42f635da-2859-44df-8525-2272985c713a" />
 
 
 
